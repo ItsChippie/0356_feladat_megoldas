@@ -1,14 +1,29 @@
 <!DOCTYPE html>
-<html lang="hu">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+	<meta charset="UTF-8">
+	<title>Gyeptégla kalkulátor</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Sablon</h1>
-    </div>
-    <script src="app.java"></script>
+	<h1>Gyeptégla kalkulátor</h1>
+	<div class="telek1">
+		<h2>Telek 1</h2>
+		<label for="telek1_oldal">Oldal hossza (m):</label>
+		<input type="number" id="telek1_oldal" name="telek1_oldal">
+	</div>
+	<div class="telek2">
+		<h2>Telek 2</h2>
+		<label for="telek2_oldal">Oldal hossza (m):</label>
+		<input type="number" id="telek2_oldal" name="telek2_oldal">
+	</div>
+	<div class="button">
+		<button onclick="szamol()">Számol</button>
+	</div>
+	<div class="eredmeny">
+		<p>A szükséges gyeptégla mennyisége:</p>
+		<p id="eredmeny"></p>
+	</div>
+	<script src="script.js"></script>
 </body>
 </html>
